@@ -1,0 +1,157 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/hassan
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 16
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 20
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 606
+    content: "\e]0;hassan@lenovo:~\e\\\e]7;file://lenovo/home/hassan\e\\\e[?2004h\e[32mhassan@lenovo\e[00m:\e[34m~\e[31m\e[00m$ "
+  - delay: 691
+    content: c
+  - delay: 104
+    content: o
+  - delay: 168
+    content: e
+  - delay: 121
+    content: 'n'
+  - delay: 82
+    content: 'v '
+  - delay: 574
+    content: s
+  - delay: 352
+    content: p
+  - delay: 224
+    content: d
+  - delay: 224
+    content: l
+  - delay: 207
+    content: o
+  - delay: 436
+    content: "\ag/1."
+  - delay: 1305
+    content: "\a"
+  - delay: 225
+    content: "\r\nspdlog/1.10.0  spdlog/1.5.0   spdlog/1.7.0   spdlog/1.8.2   spdlog/1.9.1\r\nspdlog/1.11.0  spdlog/1.6.0   spdlog/1.8.0   spdlog/1.8.5   spdlog/1.9.2\r\nspdlog/1.4.2   spdlog/1.6.1   spdlog/1.8.1   spdlog/1.9.0   \r\n\e[32mhassan@lenovo\e[00m:\e[34m~\e[31m\e[00m$ coenv spdlog/1."
+  - delay: 1362
+    content: '1'
+  - delay: 456
+    content: '1'
+  - delay: 408
+    content: '.0 '
+  - delay: 737
+    content: "\r\n\e[?2004l\r"
+  - delay: 251
+    content: "\e[1m\e[35m\r\n======== Input profiles ========\e[0m\r\n\e[1m\e[36mProfile host:\e[0m\r\n[settings]\r\narch=x86_64\r\nbuild_type=Release\r\ncompiler=gcc\r\ncompiler.cppstd=gnu17\r\ncompiler.libcxx=libstdc++11\r\ncompiler.version=11\r\nos=Linux\r\n\e[0m\r\n\e[1m\e[36mProfile build:\e[0m\r\n[settings]\r\narch=x86_64\r\nbuild_type=Release\r\ncompiler=gcc\r\ncompiler.cppstd=gnu17\r\ncompiler.libcxx=libstdc++11\r\ncompiler.version=11\r\nos=Linux\r\n\e[0m\r\n\e[1m\e[35m\r\n======== Computing dependency graph ========\e[0m\r\n"
+  - delay: 7
+    content: "\e[1m\e[33mGraph root\e[0m\r\n\e[1m\e[36m    cli\e[0m\r\n\e[1m\e[33mRequirements\e[0m\r\n\e[1m\e[36m    fmt/9.1.0#e747928f85b03f48aaf227ff897d9634 - Cache\e[0m\r\n\e[1m\e[36m    spdlog/1.11.0#d0fdbaa523550b89156084bf42b41c90 - Cache\e[0m\r\n\e[1m\e[35m\r\n======== Computing necessary packages ========\e[0m\r\n\e[1m\e[33mRequirements\e[0m\r\n\e[1m\e[36m    fmt/9.1.0#e747928f85b03f48aaf227ff897d9634:c9399c0423ddb210e7337ba6034ebe67ba8cd038#f1cfae685774fcf5a4c25bdf162542ae - Cache\e[0m\r\n\e[1m\e[36m    spdlog/1.11.0#d0fdbaa523550b89156084bf42b41c90:88b331264006a70e99e873e05cb00552d2a0d8f4#42df23408068cfc02ea523445cfba97d - Cache\e[0m\r\n\e[1m\e[35m\r\n======== Installing packages ========\e[0m\r\n\e[1m\e[32mfmt/9.1.0:\e[0m \e[1m\e[32mAlready installed! (1 of 2)\e[0m\r\n\e[1m\e[32mspdlog/1.11.0:\e[0m \e[1m\e[32mAlready installed! (2 of 2)\e[0m\r\n\e[33mWARN: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:\e[0m\r\n\e[33mWARN:     'cpp_info.names' used in: fmt/9.1.0, spdlog/1.11.0\e[0m\r\n\e[1m\e[35m\r\n======== Finalizing install (deploy, generators) ========\e[0m\r\n\e[1m\e[35mcli:\e[0m \e[1m\e[35mGenerating aggregated env files\e[0m\r\ncli:\e[0m Generated aggregated env files: ['conanbuild.sh', 'conanrun.sh']\e[0m\r\n\e[1m\e[32mInstall finished successfully\e[0m\r\n\e[0m"
+  - delay: 28
+    content: "\e]0;hassan@lenovo:~\e\\\e]7;file://lenovo/home/hassan\e\\\e[?2004h\e[32mhassan@lenovo\e[00m:\e[34m~\e[31m\e[00m$ "
+  - delay: 5000
+    content: ' '
