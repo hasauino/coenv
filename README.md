@@ -1,6 +1,6 @@
 # coenv
 
-Fast auto-completion for  [conan](https://conan.io/) 2 (Linux only):
+Fast auto-completion for  [conan](https://conan.io/) 2 (Linux only) (for conan 1, check [conan 1](https://github.com/hasauino/coenv/tree/conan_1) branch):
 
 ![](imgs/demo2.gif)
 
@@ -13,7 +13,7 @@ Fast auto-completion for  [conan](https://conan.io/) 2 (Linux only):
 - Copy and run the following command.
 
 ```bash
-curl "https://raw.githubusercontent.com/hasauino/coenv/master/coenv?token=GHSAT0AAAAAAB6Q7BHY6NFLBW3KY7VPHTMMZCIH2SQ" --create-dirs -o /home/${USER}/.coenv/coenv && printf "\n# Add coenv command\n. /home/$USER/.coenv/coenv" >> ~/.bashrc && source ~/.bashrc
+curl "https://raw.githubusercontent.com/hasauino/coenv/conan_2/coenv" --create-dirs -o /home/${USER}/.coenv/coenv && printf "\n# Add coenv command\n. /home/$USER/.coenv/coenv" >> ~/.bashrc && source ~/.bashrc
 ```
 
 - Use `coenv` :wink: (check examples)
