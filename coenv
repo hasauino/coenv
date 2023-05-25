@@ -26,6 +26,10 @@ coenv() {
         fi
         conan install $pkg_ref -if /tmp/$pkg_name -g virtualenv && \
         source /tmp/$pkg_name/activate.sh
+        export PS1=$CONAN_OLD_PS1
+        source /tmp/$pkg_name/activate_run.sh
+        export PS1=$CONAN_OLD_PS1
+        export PS1="($pkg_name) $PS1"
     fi
 }
 
