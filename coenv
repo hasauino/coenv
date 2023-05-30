@@ -24,7 +24,7 @@ coenv() {
         if [[ "$pkg_ref" != *@* && "${pkg_ref: -1}" != "@" ]]; then
             pkg_ref="$pkg_ref@"
         fi
-        conan install $pkg_ref -if /tmp/$pkg_name -g virtualenv && \
+        conan install $pkg_ref -if /tmp/$pkg_name -g virtualenv -g virtualrunenv && \
         source /tmp/$pkg_name/activate.sh
         export PS1=$CONAN_OLD_PS1
         source /tmp/$pkg_name/activate_run.sh
