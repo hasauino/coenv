@@ -20,7 +20,7 @@ coenv() {
         echo "Done.."
     else
         pkg_name=$(_get_pkg_name $1)
-        conan install --requires $1 -of /tmp/$pkg_name && \
+        conan install --build=missing --requires $1 -of /tmp/$pkg_name && \
         source /tmp/$pkg_name/conanrun.sh
     fi
 }
