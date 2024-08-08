@@ -1,10 +1,19 @@
 # coenv
 
-Fast auto-completion for  [conan](https://conan.io/) 2 (Linux only) (for conan 1, check [conan 1](https://github.com/hasauino/coenv/tree/conan_1) branch):
+coenv is a tool to install a conan package and source/activate it's conan run environment in one shot.
+Packages can be local, or remote. 
+
+:white_check_mark: Fast auto-completion for local/remote package names.
+
+:white_check_mark:   [conan](https://conan.io/) 2 (Linux only) 
+
+:white_check_mark: conan 1, (check [conan 1](https://github.com/hasauino/coenv/tree/conan_1) branch).
+
+It can be really handy for conan packages that include executables and you want to quickly run them.
 
 ![](imgs/demo2.gif)
 
-- :fire: it also has **auto-completion** search in local and remote packages
+
 
 
 
